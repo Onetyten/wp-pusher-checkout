@@ -27,6 +27,35 @@ body{
     align-items: center;
     gap: 40px;
 }
+.Credit-Card-info{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    position: absolute;
+
+}
+
+.input-card{
+    position: relative;
+}
+.mmpos{
+    right: -150px;
+    top: 10px;
+}
+
+.cvcpos{
+    right: -250px;
+    top: 10px;
+}
+
+.Credit-Card-info p{
+    color: #646E7A;
+
+}
+
+.hidden-nav{
+    display: none;
+}
 .right-nav ul,.right-nav a,.right-nav button{
     list-style: none;
     text-decoration: none;
@@ -251,4 +280,105 @@ body{
 .profile p{
     font-size: 16px;
     font-weight: 700;
+}
+
+
+@media (max-width:758px) {
+    
+    .head{
+        padding: 10px;
+        border-bottom: 3px solid #E0E6EA;
+    }
+
+    .logo-nav img{
+        width: 120px;
+        height: 39px;
+        object-fit: contain;
+    }
+    .right-nav{
+        display: none;
+    }
+    .hidden-nav{
+        display: inline;
+    }
+
+    .page-container{
+        background-color: #ffffff;
+        padding: 50px 0px;
+        padding-bottom: 0;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .page-body{
+        flex-direction: column;
+        box-shadow: 0px 0px 3px 0px #646E7A;
+
+    }
+    .info-div{
+        padding: 20px;
+        border-bottom: 5px solid #F5F7FA;
+    }
+    .info-div h2{
+        font-size: 25px;
+        text-shadow: 0px 4px 5px #646E7A;
+    }
+
+    .left-side{
+        width: 100%;
+    }
+
+    .line1 p{
+        font-size: 15px;
+    }
+    .line2{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .line2 div,.line4  div{
+        flex-direction: column;
+        margin-right: 10px;
+
+    }
+    .line2 input,.line3 input,.line4 input{
+        width: 100%;
+    }
+
+    .line5 button{
+        font-size: 15px;
+    }
+
+
+    .right-side{
+        width: 62%;
+    }
+    .title{
+        font-size: 15px;
+    }
+    .dollar{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .price-container{
+        gap: 5px;
+    }
+    .price-num{
+        font-size: 60px;
+    }
+    .year{
+        padding-top: 40px;
+    }
+    .instr{
+        font-size: 15px;
+        width: 100%;
+    }
+
+
+    .desc-contain{
+        padding-top:30px;
+        border-top: 4px solid #4194CC;
+        margin-top: 50px;
+        width: 62%;
+    }
+    
 }
